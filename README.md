@@ -43,11 +43,13 @@ or:
 $ setenv PATH /path/to/LLVM/Release/bin:$PATH
 ```
 
-2. Configure Loom build:
+2. Configure Loom build(使用clang编译):
 ```sh
 $ cd /path/to/Loom
 $ mkdir Release
 $ cd Release
+$ export CC=/usr/bin/clang
+$ export CXX=/usr/bin/clang++
 $ cmake -G Ninja -D CMAKE_BUILD_TYPE=Release ..
 ```
 
