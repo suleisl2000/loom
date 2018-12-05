@@ -48,8 +48,8 @@ $ setenv PATH /path/to/LLVM/Release/bin:$PATH
 $ cd /path/to/Loom
 $ mkdir Release
 $ cd Release
-$ export CC=/usr/bin/clang
-$ export CXX=/usr/bin/clang++
+$ export CC=/usr/bin/clang-6.0
+$ export CXX=/usr/bin/clang++-6。0
 $ cmake -G Ninja -D CMAKE_BUILD_TYPE=Release ..
 ```
 
