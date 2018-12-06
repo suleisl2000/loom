@@ -1,5 +1,6 @@
 A sample for compilation by manual
 
+```sh
 export SRCFILE=function-instrumentation.c.orig
 export DSTFILE=function-instrumentation
 export CFLAGS=-g
@@ -13,3 +14,4 @@ llc -filetype=obj $DSTFILE.instr.ll -o $DSTFILE.instr.o
 clang $DSTFILE.instr.o -o $DSTFILE.instr
 ./$DSTFILE.instr > $DSTFILE.output
 FileCheck -input-file $DSTFILE.output $SRCFILE -check-prefix CHECK-OUTPUT
+```
