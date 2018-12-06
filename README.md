@@ -49,7 +49,7 @@ $ cd /path/to/Loom
 $ mkdir Release
 $ cd Release
 $ export CC=/usr/bin/clang-6.0
-$ export CXX=/usr/bin/clang++-6。0
+$ export CXX=/usr/bin/clang++-6.0
 $ cmake -G Ninja -D CMAKE_BUILD_TYPE=Release ..
 ```
 
